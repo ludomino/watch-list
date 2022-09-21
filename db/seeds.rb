@@ -7,6 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 puts "Cleaning up database..."
+List.destroy_all
 Bookmark.destroy_all
 Movie.destroy_all
 puts "Database cleaned"
