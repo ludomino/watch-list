@@ -11,6 +11,11 @@
   </head>
 
   <body>
+     <%= render 'shared/navbar' %>
+    <% unless controller_name ==  "lists" && action_name == "show" || controller_name ==  "lists" && action_name == "new"%>
+      <%= render 'shared/head' %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
